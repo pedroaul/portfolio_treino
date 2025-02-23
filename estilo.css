@@ -1,0 +1,80 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #C3EEFD;
+    height: 100vh;
+}
+
+.padrao {
+    display: flex;
+}
+
+.logo img {
+    width: 130px;
+    height: 115px;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CABECALHO */
+
+.cabecalho .interface {
+    padding: 45px 10%;
+    background-color: #DCF7FE;
+    box-shadow: 0 0 15px #61DBFB;
+}
+
+.cabecalho .padrao {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .menu a{
+    padding: 0 30px;
+    font-size: 22px;
+    color: #000000;
+    display: inline-block;
+}
+
+.cabecalho nav.menu a:hover {
+    color: #05BBD1;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.cabecalho .contato {
+    display: inline-block;
+}
+
+.cabecalho button {
+    width: 165px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #0021C6;
+    border: none;
+}
+
+.cabecalho .contato button:hover {
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0 0 8px #0643D8;
+}
+
+.cabecalho .contato a {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 700;
+}
