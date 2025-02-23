@@ -12,6 +12,10 @@ body {
     height: 100vh;
 }
 
+.interface {
+    margin: 0 auto;
+}
+
 .padrao {
     display: flex;
 }
@@ -105,13 +109,22 @@ a {
     max-width: 60%;
 }
 
-.interface .base_arte {
-    max-width: 100%;
+.interface .base_arte img {
     width: 480px;
     height: 480px;
     border-radius: 50%;
+    position: relative;
+    animation: balao 1.8s ease-in-out infinite alternate;
 }
 
+@keyframes balao {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
 
 .interface .txt_inicial p {
     font-size: 25px;
@@ -140,6 +153,7 @@ a {
     box-shadow: 0 0  12px #05BBD1;
     transform: scale(1.05);
     transition: .2s;
+    cursor: pointer;
 }
 
 .conhecimentos .interface {
