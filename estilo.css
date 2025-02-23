@@ -29,6 +29,17 @@ a {
     text-decoration: none;
 }
 
+.interface h1 {
+    color: #2B3A67;
+    font-size: 49px;
+    font-weight: 700;
+    padding: 60px 0;
+}
+
+.interface span {
+    color: #05BBD1;
+}
+
 /* CABECALHO */
 
 .cabecalho .interface {
@@ -85,17 +96,6 @@ a {
     padding: 80px 10%;
 }
 
-.base .interface h1 {
-    color: #2B3A67;
-    font-size: 49px;
-    padding: 60px 0;
-    flex-direction: column;
-}
-
-.base .interface span {
-    color: #05BBD1;
-}
-
 .base .interface .padrao {
     justify-content: space-between;
     align-items: center;
@@ -116,4 +116,44 @@ a {
 .interface .txt_inicial p {
     font-size: 25px;
     line-height: 30px;
+}
+
+/* CONHECIMENTOS */
+
+.conhecimentos .interface {
+    padding: 40px 10%;
+}
+
+.conhecimentos .padrao {
+    gap: 0 100px;
+}
+
+.conhecimentos .cx_conhecimento {
+    width: 460px;
+    height: 380px;
+    padding: 0px 3%;
+    border-radius: 12px;
+    align-content: center;
+}
+
+.conhecimentos .cx_conhecimento:hover {
+    box-shadow: 0 0  12px #05BBD1;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.conhecimentos .interface {
+    justify-items: center;
+}
+
+.conhecimentos i {
+    color: #05BBD1;
+    font-size: 55px;
+}
+
+.conhecimentos h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: #2B3A67;
 }
