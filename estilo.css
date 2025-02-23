@@ -32,9 +32,8 @@ a {
 /* CABECALHO */
 
 .cabecalho .interface {
-    padding: 45px 10%;
-    background-color: #DCF7FE;
-    box-shadow: 0 0 15px #61DBFB;
+    padding: 45px 17%;
+    background-color: #2B3A67;
 }
 
 .cabecalho .padrao {
@@ -45,7 +44,7 @@ a {
 .cabecalho .menu a{
     padding: 0 30px;
     font-size: 22px;
-    color: #000000;
+    color: #ffff;
     display: inline-block;
 }
 
@@ -63,18 +62,58 @@ a {
     width: 165px;
     height: 50px;
     border-radius: 30px;
-    background-color: #0021C6;
+    background-color: #05BBD1;
     border: none;
 }
 
 .cabecalho .contato button:hover {
+    cursor: pointer;
     transform: scale(1.05);
     transition: .2s;
-    box-shadow: 0 0 8px #0643D8;
+    box-shadow: 0 0 8px #61DBFB;
 }
 
 .cabecalho .contato a {
     color: #ffff;
     font-size: 15px;
     font-weight: 700;
+}
+
+/* BASE */
+
+.base .interface {
+    padding: 80px 10%;
+}
+
+.base .interface h1 {
+    color: #2B3A67;
+    font-size: 49px;
+    padding: 60px 0;
+    flex-direction: column;
+}
+
+.base .interface span {
+    color: #05BBD1;
+}
+
+.base .interface .padrao {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.base .interface .txt_inicial {
+    max-width: 60%;
+}
+
+.interface .base_arte {
+    max-width: 100%;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+}
+
+
+.interface .txt_inicial p {
+    font-size: 25px;
+    line-height: 30px;
 }
