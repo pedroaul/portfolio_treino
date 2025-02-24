@@ -14,6 +14,7 @@ body {
 
 .interface {
     margin: 0 auto;
+    max-width: 1280px;
 }
 
 .padrao {
@@ -21,8 +22,8 @@ body {
 }
 
 .logo img {
-    width: 130px;
-    height: 115px;
+    width: 95px;
+    height: 90px;
 }
 
 .menu ul li {
@@ -35,9 +36,9 @@ a {
 
 .interface h1 {
     color: #2B3A67;
-    font-size: 49px;
+    font-size: 40px;
     font-weight: 700;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .interface span {
@@ -46,19 +47,20 @@ a {
 
 /* CABECALHO */
 
-.cabecalho .interface {
-    padding: 45px 17%;
+.cabecalho {
+    padding: 0 4%;
     background-color: #2B3A67;
 }
 
 .cabecalho .padrao {
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 .cabecalho .menu a{
     padding: 0 30px;
-    font-size: 22px;
+    font-size: 18px;
     color: #ffff;
     display: inline-block;
 }
@@ -97,7 +99,7 @@ a {
 /* BASE */
 
 .base .interface {
-    padding: 80px 10%;
+    padding: 40px 4%;
 }
 
 .base .interface .padrao {
@@ -110,8 +112,8 @@ a {
 }
 
 .interface .base_arte img {
-    width: 480px;
-    height: 480px;
+    width: 360px;
+    height: 360px;
     border-radius: 50%;
     position: relative;
     animation: balao 1.8s ease-in-out infinite alternate;
@@ -127,14 +129,14 @@ a {
 }
 
 .interface .txt_inicial p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
 }
 
 /* CONHECIMENTOS */
 
 .conhecimentos .interface {
-    padding: 40px 10%;
+    padding: 60px 10%;
 }
 
 .conhecimentos .padrao {
