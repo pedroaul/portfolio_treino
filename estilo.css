@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #C3EEFD;
+    background-color: #f8feff;
     height: 100vh;
 }
 
@@ -122,18 +122,37 @@ a {
     font-weight: 700;
 }
 
-/* BASE */
+/* INICIO */
 
-.base .interface {
+section.inicio {
+    margin-top: 40px;
     padding: 40px 4%;
 }
 
-.base .interface .padrao {
+.ft_eu img {
+    width: 450px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.inicio .padrao {
+    align-items: center;
+    gap: 100px;
+}
+
+/* SOBRE */
+
+section.sobre {
+    margin-bottom: 120px;
+    padding: 40px 4%;
+}
+
+.sobre .interface .padrao {
     justify-content: space-between;
     align-items: center;
 }
 
-.base .interface .txt_inicial {
+.sobre .interface .txt_inicial {
     max-width: 60%;
 }
 
@@ -201,6 +220,56 @@ a {
     color: #2B3A67;
 }
 
-/* SOBRE */
+
+
+/* PORTFOLIO */
+
+section.portfolio {
+    box-shadow: 0 0 12px #05BBD1;
+    padding: 40px 2%;
+}
+
+section.portfolio .padrao {
+    gap: 40px;
+}
+
+.imgptf {
+    width: 450px;
+    height: 600px;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    background-position: 100% 0;
+    transition: 3s;
+}
+
+.imgptf:hover {
+    background-position: 100% 100%;
+}
+
+.txtport {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    background-color: #2b3a6786;
+    color: #ffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.txtport:hover {
+    opacity: 1;
+}
+
+
+
 
 
