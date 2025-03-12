@@ -140,6 +140,10 @@ section.inicio {
     gap: 100px;
 }
 
+.inicio .txt_eu {
+    font-size: 20px;
+}
+
 /* SOBRE */
 
 section.sobre {
