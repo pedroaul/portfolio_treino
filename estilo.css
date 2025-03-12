@@ -220,8 +220,6 @@ section.sobre {
     color: #2B3A67;
 }
 
-
-
 /* PORTFOLIO */
 
 section.portfolio {
@@ -269,6 +267,31 @@ section.portfolio .padrao {
     opacity: 1;
 }
 
+/* RODAPE */
+
+.rodape .interface {
+    padding: 40px 4%;
+}
+
+.rodape .padrao {
+    justify-content: space-between;
+}
+
+.rodape .email {
+    font-size: 25px;
+    text-decoration: none;
+    border-top: 2px solid #05BBD1;
+    padding: 20px 0;
+}
+
+.rodape .email i {
+    color: #2B3A67;
+    padding: 0 10px;
+}
+
+.rodape .email a {
+    color: #05BBD1;
+}
 
 
 
