@@ -65,7 +65,7 @@ a {
 
 .bt_redes a button:hover {
     transform: scale(1.05);
-    transition: .2s;
+    transition: .4s;
     box-shadow: 0 0 12px #05BBD1;
     cursor: pointer;
     
@@ -295,6 +295,11 @@ section.portfolio .padrao {
 
 .rodape .email a {
     color: #05BBD1;
+}
+
+.rodape .email a:hover {
+    color: #7de9f5;
+    transition: .5s;
 }
 
 
