@@ -34,20 +34,16 @@ a {
     text-decoration: none;
 }
 
-.interface h1 {
+.interface h2 {
     color: #2B3A67;
     font-size: 40px;
     font-weight: 700;
     padding: 50px 0;
+    text-align: center;
 }
 
 .interface span {
     color: #05BBD1;
-}
-
-.bt_redes {
-    padding: 20px 0;
-    display: flex;
 }
 
 .bt_redes button {
@@ -55,7 +51,6 @@ a {
     height: 80px;
     background-color: #2B3A67;
     border-radius: 50%;
-    margin: 0 15px;
     align-items: center;
     justify-content: center;
     font-size: 35px;
@@ -144,6 +139,21 @@ section.inicio {
     font-size: 20px;
 }
 
+.inicio .txt_eu h1 {
+    color: #2B3A67;
+}
+
+.inicio .txt_eu span {
+    display: block;
+    margin-bottom: 35px;
+}
+
+section.inicio .bt_redes {
+    padding: 40px 0;
+    display: flex;
+    gap: 25px;
+}
+
 /* SOBRE */
 
 section.sobre {
@@ -185,7 +195,7 @@ section.sobre {
 /* CONHECIMENTOS */
 
 .conhecimentos .interface {
-    padding: 60px 0;
+    padding: 60px 4%;
 }
 
 .conhecimentos .padrao {
@@ -194,11 +204,9 @@ section.sobre {
 }
 
 .conhecimentos .cx_conhecimento {
-    width: 350px;
-    height: 350px;
-    padding: 0px 3%;
+    padding: 60px;
     border-radius: 12px;
-    align-content: center;
+    
 }
 
 .conhecimentos .cx_conhecimento:hover {
@@ -229,6 +237,7 @@ section.sobre {
 section.portfolio {
     box-shadow: 0 0 12px #05BBD1;
     padding: 40px 2%;
+    padding-bottom: 90px;
 }
 
 section.portfolio .padrao {
@@ -279,6 +288,12 @@ section.portfolio .padrao {
 
 .rodape .padrao {
     justify-content: space-between;
+    padding: 15px 0;
+}
+
+.rodape .bt_redes {
+    display: flex;
+    gap: 15px;
 }
 
 .rodape .email {
@@ -303,5 +318,65 @@ section.portfolio .padrao {
 }
 
 
+/* RESPONSIVO */
 
+@media screen and (max-width: 1220px) {
+    /* CLASSES GERAIS */
+    .padrao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bt_redes {
+        justify-content: center;
+    }
+
+    /* INICIO */
+
+    section.inicio .padrao {
+        flex-direction: column-reverse;
+    }
+
+    .txt_eu {
+        text-align: center;
+    }
+
+    .inicio .txt_eu {
+        font-size: 28px;
+    }
+
+    .inicio .txt_eu h1 {
+        font-weight: 700;
+    }
+
+    .interface .txt_eu p {
+        font-size: 25px;
+    }
+
+    /* CONHECIMENTOS */
+
+    .conhecimentos .cx_conhecimento {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+
+    .sobre .interface .txt_inicial {
+        max-width: 80%;
+    }
+
+    .sobre .txt_inicial {
+        padding: 80px 0;
+    }
+
+    /* RODAPE */
+
+    .rodape .logo {
+        margin-bottom: 25px;
+    }
+
+    .rodape .bt_redes {
+        margin-bottom: 25px;
+    }
+}
 
