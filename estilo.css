@@ -13,8 +13,8 @@ body {
 }
 
 .interface {
-    margin: 0 auto;
     max-width: 1280px;
+    margin: 0 auto;
 }
 
 .padrao {
@@ -26,7 +26,7 @@ body {
     height: 90px;
 }
 
-.menu ul li {
+header ul li {
     list-style-type: none;
 }
 
@@ -68,35 +68,39 @@ a {
 
 /* CABECALHO */
 
-.cabecalho {
-    padding: 0 4%;
+header {
+    padding: 40px 4%;
     background-color: #2B3A67;
 }
 
-.cabecalho .padrao {
+header > .interface {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
 
-.cabecalho .menu a{
-    padding: 0 30px;
+header a {
     font-size: 18px;
     color: #ffff;
     display: inline-block;
-}
-
-.cabecalho nav.menu a:hover {
-    color: #05BBD1;
-    transform: scale(1.05);
     transition: .2s;
 }
 
-.cabecalho .contato {
+header nav.menu a:hover {
+    color: #05BBD1;
+    transform: scale(1.05);
+}
+
+header nav.menu ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .contato {
     display: inline-block;
 }
 
-.cabecalho button {
+header button {
     width: 165px;
     height: 50px;
     border-radius: 30px;
@@ -104,17 +108,22 @@ a {
     border: none;
 }
 
-.cabecalho .contato button:hover {
+header .contato button:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: .2s;
     box-shadow: 0 0 8px #61DBFB;
+    color: #ebfafd;
 }
 
-.cabecalho .contato a {
+header .contato button {
     color: #ffff;
     font-size: 15px;
     font-weight: 700;
+}
+
+.opc_cel, .bt_abmenu {
+    display: none;
 }
 
 /* INICIO */
@@ -329,6 +338,80 @@ section.portfolio .padrao {
 
     .bt_redes {
         justify-content: center;
+    }
+
+    /* CABECALHO */
+
+    header .menu, header .contato {
+        display: none;
+    }
+
+    /* MENU CELULAR */
+    .bt_abmenu {
+        display: flex;
+    }
+
+    .bt_abmenu i {
+        color: #ffff;
+        font-size: 50px;
+        transition: .5s;
+    }
+
+    .bt_abmenu i:hover {
+        transform: scale(1.08);
+        cursor: pointer;
+        color: #05BBD1;
+    }
+
+    .overlay_cel {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8888;
+        background-color: #2b3a6783;
+        
+    }
+
+    .opc_cel {
+        display: block;
+        width: 70%;
+        height: 100vh;
+        background-color: #2B3A67;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+    }
+
+    .opc_cel ul li {
+        text-align: right;
+    }
+
+    .opc_cel ul li a {
+        display: block;
+        padding: 20px 6%;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+    .opc_cel ul li a:hover {
+        background-color: #05BBD1;
+        color: #ebfafd;
+    }
+
+    .opc_cel .bt_fcmenu {
+        padding: 40px 4%;
+    }
+
+    .opc_cel .bt_fcmenu i {
+        color: #ffff;
+        font-size: 25px;
+    }
+
+    .opc_cel .bt_fcmenu i:hover {
+        cursor: pointer;
     }
 
     /* INICIO */
