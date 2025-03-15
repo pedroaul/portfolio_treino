@@ -371,18 +371,29 @@ section.portfolio .padrao {
         left: 0;
         z-index: 8888;
         background-color: #2b3a6783;
-        
+        display: none;
     }
 
     .opc_cel {
-        display: block;
         width: 70%;
-        height: 100vh;
+        width: 0;
+        height: 100%;
         background-color: #2B3A67;
         position: fixed;
         top: 0;
         right: 0;
         z-index: 9999;
+        overflow: hidden;
+        display: block;
+    }
+
+    .opc_cel.ab_menu ~ .overlay_cel {
+        display: block;
+    }
+
+    .opc_cel.ab_menu {
+        width: 70%;
+        transition: .5s;
     }
 
     .opc_cel ul li {
